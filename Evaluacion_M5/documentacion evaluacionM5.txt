@@ -1,0 +1,25 @@
+DOCUMENTACION EVALUACION MODULO 5
+
+Para diseñar el modelo de datos se crearon tres tablas o entidades principales: Productos, Proveedores y Transacciones.
+
+Los atributos de la tabla Productos son:  id_producto, nombre, descripción, precio, cantidad_inventario.
+
+Los atributos de la tabla Proveedores son: id_proveedor, nombre, dirección, teléfono, email.
+
+Los atributos de la tabla Transacciones son: id_transaccion, tipo, fecha, cantidad, id_producto, id_proveedor.
+
+Al definir los tipos de dato de cada atributo, se siguió la lógica de los ejemplos y trabajos realizados en clase, realice una investigación adicional para el tipo de dato ENUM, ya que el atributo tipo en la tabla transacciones solo aceptaba dos opciones: compra o venta.
+
+Se definieron las siguientes relaciones entre las tablas:
+Relación uno a  mucho entre producto y transacciones, un producto puede estar en diferentes transacciones. 
+Relación uno a muchos entre proveedor y transacciones, ya que un proveedor puede realizar muchas transacciones. 
+Cada transacción involucra un solo producto y un solo proveedor, para que cada fila en la tabla transacciones represente una operación sobre un solo producto y se me hiciera más facil la realización del modelo.
+
+Para cumplir con la normalización de la primera forma, todas las columnas tienen valores 
+atómicos ( en productos, cada fila tiene un solo nombre, precio, cantidad, etc.); todos los 
+atributos no clave dependen completamente de la clave primaria con lo cual se cumple la segunda forma de normalización, y, para cumplir con la tercera forma de normalización, no existen dependencias entre los atributos no clave: en proveedores, el teléfono y email dependen directamente de id_proveedor, no de otro atributo como nombre.
+
+
+
+
+

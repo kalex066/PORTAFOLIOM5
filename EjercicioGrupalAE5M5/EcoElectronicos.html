@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ECO-ELECTRÓNICOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>ECO-ELECTRÓNICOS</h1>
+    <p>Reciclaje de artículos electrónicos</p>
+  </header>
+
+  <section>
+    <h2>¿Quiénes somos?</h2>
+    <p>Amamos cuidar el medio ambiente y por eso creamos un emprendimiento dedicado al retiro y reciclaje de equipos electrónicos. Coordinamos el retiro en tu domicilio y tratamos adecuadamente tus equipos electrónicos en desuso.</p>
+  </section>
+
+  <section>
+    <h2>Agendar Retiro</h2>
+    <form>
+      <label for="nombre">Nombre del cliente:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="fecha">Fecha del retiro:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <label for="hora">Hora del retiro:</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <label for="nombre_articulo">Nombre del artículo:</label>
+      <select id="nombre_articulo" name="nombre_articulo">
+        <option value="monitor">Monitor</option>
+        <option value="celular">Celular</option>
+        <option value="impresora">Impresora</option>
+        <option value="otros">Otros</option>
+      </select>
+
+      <label for="descripcion">Descripción del artículo:</label>
+      <input type="text" id="descripcion" name="descripcion">
+
+      <label for="estado">Estado del artículo:</label>
+      <select id="estado" name="estado">
+        <option value="bueno">Bueno</option>
+        <option value="dañado">Dañado</option>
+      </select>
+
+      <br><br>
+      <input type="submit" value="Agendar Retiro">
+    </form>
+  </section>
+
+  <section>
+    <h2>Reciclajes Realizados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Cliente</th>
+          <th>Fecha</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Karen Soto</td>
+          <td>2025-09-05</td>
+          <td>Monitor</td>
+          <td>LCD 24 pulgadas</td>
+          <td>Bueno</td>
+        </tr>
+        <tr>
+          <td>Juan Pérez</td>
+          <td>2025-09-06</td>
+          <td>Celular</td>
+          <td>Samsung Galaxy A10</td>
+          <td>Dañado</td>
+        </tr>
+        <tr>
+          <td>Ana Torres</td>
+          <td>2025-09-07</td>
+          <td>Impresora</td>
+          <td>HP DeskJet 2135</td>
+          <td>Bueno</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Botón Sticky de Contacto -->
+  <a href="mailto:contacto@eco-electronicos.cl" class="contacto-sticky" title="Contáctanos">
+    📩 Contáctanos
+  </a>
+
+</body>
+</html>
